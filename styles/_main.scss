@@ -1,0 +1,228 @@
+@use "variable";
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  padding: 2rem 1rem;
+  span {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-right: 5px;
+  }
+
+  #monthly-price {
+    font-size: 4.4rem;
+    width: 100%;
+    display: none;
+  }
+
+  #annual-price {
+    display: flex;
+  }
+
+  // BASIC //
+  .basic {
+    @include variable.section($bg-color: #fff);
+
+    .basic-content {
+      @include variable.section-content;
+
+      p,
+      button {
+        padding: 1rem 0;
+      }
+
+      .basic-price {
+        font-size: 4.4rem;
+        @include variable.price($size: 100%);
+      }
+
+      .basic-price,
+      p {
+        border-bottom: 1px solid variable.$lgblue;
+      }
+      p {
+        @include variable.section-p;
+      }
+
+      button {
+        @include variable.section-btn;
+      }
+      button:hover {
+        background: transparent;
+        border: 1px solid hsl(237, 63%, 64%);
+        color: hsl(237, 63%, 64%);
+      }
+    }
+  }
+
+  // BASIC //
+
+  // PROFESSIONAL//
+  .professional {
+    @include variable.section(
+      $bg-color: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%))
+    );
+
+    h2 {
+      color: #fff;
+    }
+    .professional-content {
+      @include variable.section-content;
+
+      p,
+      button {
+        padding: 1rem 0;
+      }
+
+      .professional-price {
+        font-size: 4.4rem;
+        @include variable.price($size: 100%);
+      }
+
+      .professional-price,
+      p {
+        color: #fff;
+        border-bottom: 1px solid variable.$lgblue;
+      }
+      p {
+        @include variable.section-p;
+      }
+
+      button {
+        @include variable.section-btn(
+          $bg: variable.$vlgblue,
+          $fcolor: hsl(237, 63%, 64%)
+        );
+      }
+      button:hover {
+        background: transparent;
+        border: 1px solid variable.$vlgblue;
+        color: variable.$vlgblue;
+      }
+    }
+  }
+
+  // PROFESSIONAL//
+
+  // MASTER //
+  .master {
+    @include variable.section($bg-color: #fff);
+
+    .master-content {
+      @include variable.section-content;
+
+      p,
+      button {
+        padding: 1rem 0;
+      }
+
+      .master-price {
+        font-size: 4.4rem;
+        @include variable.price($size: 100%);
+      }
+
+      .master-price,
+      p {
+        border-bottom: 1px solid variable.$lgblue;
+      }
+      p {
+        @include variable.section-p;
+      }
+
+      button {
+        @include variable.section-btn;
+      }
+      button:hover {
+        background: transparent;
+        border: 1px solid hsl(237, 63%, 64%);
+        color: hsl(237, 63%, 64%);
+      }
+    }
+  }
+
+  // MASTER //
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 2rem 12rem;
+    section {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and(min-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 2rem 5rem;
+
+    #monthly-price {
+      font-size: 3rem;
+    }
+
+    .basic,
+    .professional,
+    .master {
+      width: 20rem;
+      .basic-content,
+      .professional-content,
+      .master-content {
+        .basic-price,
+        .professional-price,
+        .master-price {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    padding: 2rem 5rem;
+
+    #monthly-price {
+      font-size: 4rem;
+    }
+
+    .basic,
+    .professional,
+    .master {
+      width: 21.5rem;
+
+      .professional-content {
+        padding: 1.2rem 0;
+      }
+      .basic-content,
+      .professional-content,
+      .master-content {
+        .basic-price,
+        .professional-price,
+        .master-price {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+}

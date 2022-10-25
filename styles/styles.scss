@@ -1,0 +1,56 @@
+@use "variable";
+@use "header";
+@use "main";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: variable.$vlgblue;
+  background-image: url(../image/bg-top.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 10rem -2rem;
+  font-family: variable.$font;
+  h1,
+  h2 {
+    color: variable.$dgblue;
+  }
+  p {
+    color: variable.$gblue;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: variable.$vlgblue;
+    background-image: url(../image/bg-top.svg), url(../image/bg-bottom.svg);
+    background-repeat: no-repeat no-repeat;
+    background-size: 50%, 50%;
+    background-position: right top, left bottom;
+    font-family: variable.$font;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: variable.$vlgblue;
+    background-image: url(../image/bg-top.svg), url(../image/bg-bottom.svg);
+    background-repeat: no-repeat no-repeat;
+    background-size: 20%, 20%;
+    background-position: right top, left bottom;
+    font-family: variable.$font;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-color: variable.$vlgblue;
+    background-image: url(../image/bg-top.svg), url(../image/bg-bottom.svg);
+    background-repeat: no-repeat no-repeat;
+    background-size: 25%, 25%;
+    background-position: right top, left 34rem;
+    font-family: variable.$font;
+  }
+}

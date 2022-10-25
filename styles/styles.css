@@ -1,0 +1,403 @@
+header {
+  width: 100%;
+  padding: 4rem 1rem 2rem;
+}
+header .select-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+header .select-section .price-select {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+header .select-section .price-select .toggle {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  border-radius: 2rem;
+  width: 4.5rem;
+  padding: 0.2rem 0.3rem;
+}
+header .select-section .price-select .toggle button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: hsl(240deg, 78%, 98%);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+header .select-section .price-select .toggle #monthly {
+  display: flex;
+}
+header .select-section .price-select .toggle #annually {
+  position: inherit;
+  right: 0;
+  display: none;
+}
+header .select-section .price-select .toggle:hover {
+  cursor: pointer;
+  background: hsl(236deg, 72%, 79%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+main span {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-right: 5px;
+}
+main #monthly-price {
+  font-size: 4.4rem;
+  width: 100%;
+  display: none;
+}
+main #annual-price {
+  display: flex;
+}
+main .basic {
+  box-shadow: 0px 0px 15px 10px hsla(240deg, 78%, 91%, 0.5);
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 2rem 2rem;
+}
+main .basic .basic-content {
+  letter-spacing: 0.5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .basic .basic-content p,
+main .basic .basic-content button {
+  padding: 1rem 0;
+}
+main .basic .basic-content .basic-price {
+  font-size: 4.4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+main .basic .basic-content .basic-price,
+main .basic .basic-content p {
+  border-bottom: 1px solid hsl(234deg, 14%, 74%);
+}
+main .basic .basic-content p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+main .basic .basic-content button {
+  cursor: pointer;
+  margin-top: 2rem;
+  border: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(240deg, 78%, 98%);
+  letter-spacing: 3px;
+  border-radius: 0.3rem;
+  width: 100%;
+  padding: 0.8rem;
+  background: linear-gradient(hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+}
+main .basic .basic-content button:hover {
+  background: transparent;
+  border: 1px solid hsl(237deg, 63%, 64%);
+  color: hsl(237deg, 63%, 64%);
+}
+main .professional {
+  box-shadow: 0px 0px 15px 10px hsla(240deg, 78%, 91%, 0.5);
+  background: linear-gradient(hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  border-radius: 0.5rem;
+  padding: 2rem 2rem;
+}
+main .professional h2 {
+  color: #fff;
+}
+main .professional .professional-content {
+  letter-spacing: 0.5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .professional .professional-content p,
+main .professional .professional-content button {
+  padding: 1rem 0;
+}
+main .professional .professional-content .professional-price {
+  font-size: 4.4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+main .professional .professional-content .professional-price,
+main .professional .professional-content p {
+  color: #fff;
+  border-bottom: 1px solid hsl(234deg, 14%, 74%);
+}
+main .professional .professional-content p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+main .professional .professional-content button {
+  cursor: pointer;
+  margin-top: 2rem;
+  border: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(237deg, 63%, 64%);
+  letter-spacing: 3px;
+  border-radius: 0.3rem;
+  width: 100%;
+  padding: 0.8rem;
+  background: hsl(240deg, 78%, 98%);
+}
+main .professional .professional-content button:hover {
+  background: transparent;
+  border: 1px solid hsl(240deg, 78%, 98%);
+  color: hsl(240deg, 78%, 98%);
+}
+main .master {
+  box-shadow: 0px 0px 15px 10px hsla(240deg, 78%, 91%, 0.5);
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 2rem 2rem;
+}
+main .master .master-content {
+  letter-spacing: 0.5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .master .master-content p,
+main .master .master-content button {
+  padding: 1rem 0;
+}
+main .master .master-content .master-price {
+  font-size: 4.4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+main .master .master-content .master-price,
+main .master .master-content p {
+  border-bottom: 1px solid hsl(234deg, 14%, 74%);
+}
+main .master .master-content p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+main .master .master-content button {
+  cursor: pointer;
+  margin-top: 2rem;
+  border: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(240deg, 78%, 98%);
+  letter-spacing: 3px;
+  border-radius: 0.3rem;
+  width: 100%;
+  padding: 0.8rem;
+  background: linear-gradient(hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+}
+main .master .master-content button:hover {
+  background: transparent;
+  border: 1px solid hsl(237deg, 63%, 64%);
+  color: hsl(237deg, 63%, 64%);
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 2rem 12rem;
+  }
+  main section {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 2rem 5rem;
+  }
+  main #monthly-price {
+    font-size: 3rem;
+  }
+  main .basic,
+main .professional,
+main .master {
+    width: 20rem;
+  }
+  main .basic .basic-content .basic-price,
+main .basic .basic-content .professional-price,
+main .basic .basic-content .master-price,
+main .basic .professional-content .basic-price,
+main .basic .professional-content .professional-price,
+main .basic .professional-content .master-price,
+main .basic .master-content .basic-price,
+main .basic .master-content .professional-price,
+main .basic .master-content .master-price,
+main .professional .basic-content .basic-price,
+main .professional .basic-content .professional-price,
+main .professional .basic-content .master-price,
+main .professional .professional-content .basic-price,
+main .professional .professional-content .professional-price,
+main .professional .professional-content .master-price,
+main .professional .master-content .basic-price,
+main .professional .master-content .professional-price,
+main .professional .master-content .master-price,
+main .master .basic-content .basic-price,
+main .master .basic-content .professional-price,
+main .master .basic-content .master-price,
+main .master .professional-content .basic-price,
+main .master .professional-content .professional-price,
+main .master .professional-content .master-price,
+main .master .master-content .basic-price,
+main .master .master-content .professional-price,
+main .master .master-content .master-price {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    padding: 2rem 5rem;
+  }
+  main #monthly-price {
+    font-size: 4rem;
+  }
+  main .basic,
+main .professional,
+main .master {
+    width: 21.5rem;
+  }
+  main .basic .professional-content,
+main .professional .professional-content,
+main .master .professional-content {
+    padding: 1.2rem 0;
+  }
+  main .basic .basic-content .basic-price,
+main .basic .basic-content .professional-price,
+main .basic .basic-content .master-price,
+main .basic .professional-content .basic-price,
+main .basic .professional-content .professional-price,
+main .basic .professional-content .master-price,
+main .basic .master-content .basic-price,
+main .basic .master-content .professional-price,
+main .basic .master-content .master-price,
+main .professional .basic-content .basic-price,
+main .professional .basic-content .professional-price,
+main .professional .basic-content .master-price,
+main .professional .professional-content .basic-price,
+main .professional .professional-content .professional-price,
+main .professional .professional-content .master-price,
+main .professional .master-content .basic-price,
+main .professional .master-content .professional-price,
+main .professional .master-content .master-price,
+main .master .basic-content .basic-price,
+main .master .basic-content .professional-price,
+main .master .basic-content .master-price,
+main .master .professional-content .basic-price,
+main .master .professional-content .professional-price,
+main .master .professional-content .master-price,
+main .master .master-content .basic-price,
+main .master .master-content .professional-price,
+main .master .master-content .master-price {
+    font-size: 4rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(240deg, 78%, 98%);
+  background-image: url(../image/bg-top.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 10rem -2rem;
+  font-family: "Montserrat", sans-serif;
+}
+body h1,
+body h2 {
+  color: hsl(232deg, 13%, 33%);
+}
+body p {
+  color: hsl(233deg, 13%, 49%);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: hsl(240deg, 78%, 98%);
+    background-image: url(../image/bg-top.svg), url(../image/bg-bottom.svg);
+    background-repeat: no-repeat no-repeat;
+    background-size: 50%, 50%;
+    background-position: right top, left bottom;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: hsl(240deg, 78%, 98%);
+    background-image: url(../image/bg-top.svg), url(../image/bg-bottom.svg);
+    background-repeat: no-repeat no-repeat;
+    background-size: 20%, 20%;
+    background-position: right top, left bottom;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body {
+    background-color: hsl(240deg, 78%, 98%);
+    background-image: url(../image/bg-top.svg), url(../image/bg-bottom.svg);
+    background-repeat: no-repeat no-repeat;
+    background-size: 25%, 25%;
+    background-position: right top, left 34rem;
+    font-family: "Montserrat", sans-serif;
+  }
+}/*# sourceMappingURL=styles.css.map */
